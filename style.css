@@ -1,0 +1,235 @@
+body{
+margin: auto;
+padding: auto;
+height: auto;
+width: auto;
+background-image: url('blue.webp');
+background-size: cover;
+}
+
+h1{
+  font-style: italic;
+  font-size: 5em;
+  LinearGradient(gradient: Gradient(colors: [.red .yellow, .blue]), startPoint: .top, endPoint: .bottom)
+}
+
+marquee h2{
+  font-size: 1.2em;
+  font-family: georgia;
+  font-style: italic;
+}
+
+h2{
+  font-family: georgia;
+  font-style: italic;
+}
+
+.welcome marquee{
+  font-size: 1.5em;
+  background: linear-gradient(red, yellow, blue);
+  width: 90%;
+  align-content: center;
+  margin: auto;
+  border: 1px hidden;
+  border-radius: 3px;
+  font-style: oblique;
+
+}
+
+h3{
+  font-family: georgia;
+  margin-top: 1em;
+  font-style: oblique;
+}
+
+.navbar{
+  display: block;
+  height: auto;
+  width: 100%;
+  margin: -2 0 20px 0;
+}
+
+ul{
+  float: right;
+  height: auto;
+  width: 100%;
+  margin: 0;
+  display:
+  fl
+}
+
+li{
+  display:inline-block;
+  height: 1.5em;
+  width: auto;
+  margin: 1.5em;
+  float: right;
+  flex-wrap: nowrap;
+}
+
+hr{
+  border:  ;
+  background: linear-gradient(red, yellow, blue);
+}
+
+a{
+  color: whitesmoke;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+a:hover{
+  color: gray;
+  background-color: snow;
+  border-radius: 2px;
+}
+
+.welcome{
+height: 20em;
+width: auto;
+border: 1px soli blue;
+border-radius: 8px;
+margin-top: 2em;
+text-align: center;
+color: snow;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+img{
+  height: 15em;
+  width: 98%;
+  margin-top: 1em;
+  border: 1px hidden;
+  border-radius: 5px;
+}
+
+p{
+  line-height: 1.5em;
+  @media only screen and (min-width:320px) and (max-width:1024px) {
+    font-size: 0.6em;
+    line-height: 1em;
+    background-color: white;
+    height: auto;
+    width: 100%;
+  }
+}
+
+.exp{
+  color: white;
+}
+
+#portfolio{
+  height: auto;
+  width: 23em;
+  border: 1px solid blue;
+  border-radius: 10px;
+  margin: 0.5em;
+  justify-content: center;
+  max-width: 100%;
+}
+
+#contact{
+  height: 2em
+  width: fit-content;
+  border: 1px solid blue;
+  border-radius: 8px;
+  text-align: center;
+  color: snow;
+  margin: 2em 7em;
+  background-color: blue;
+  @media only screen and (min-width:320px) and (max-width:1024px){
+      width: 100%;
+    }
+}
+
+.icon a{
+  margin: auto 2em;
+  opacity: 1;
+  @media only screen and (min-width:320px) and (max-width:1024px){
+    margin: auto 0.2em
+  }
+}
+
+.icon a:hover{
+  border-radius: 10px;
+  background-color: whit;
+  color: cyan;
+}
+
+.in{
+  color: dodgerblue;
+}
+
+.mail{
+  color: crimson;
+}
+
+.sms{
+  color: magenta;
+}
+
+.call{
+  color: gold;
+}
+
+.app{
+  color: lightgreen;
+}
+
+.fb{
+  color: lightblue;
+}
+.twitter{
+  color: cyan
+}
+#aboutme{
+  border: 1px solid blue;
+  border-radius: 5px;
+  height: auto;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  margin: 2em auto;
+  @media only screen and (min-width:320px) and (max-width:1024px){
+    height: auto;
+    width: 90%;
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+}
+
+#aboutme img{
+  height: 10em;
+  width: 10em;
+  border: 1px hidden;
+  border-radius: 5em;
+  margin: 1em;
+  display: inline-block;
+}
+
+#aboutme p{
+  margin:2.3em  auto;
+  height: auto;
+  width: 62%;
+  border: 1px hidden;
+  border-color: white;
+  float:right;
+  padding: auto;
+  line-height: 1.2em;
+  font-weight: 1em;
+  color: whitesmoke;
+}
+
+#aboutme a{
+  font-size: 1em;
+  font-style: italic;
+  font-family: montserrat;
+  color: aqua;
+}
