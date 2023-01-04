@@ -33,7 +33,6 @@ h2{
   border: 1px hidden;
   border-radius: 3px;
   font-style: oblique;
-
 }
 
 h3{
@@ -47,6 +46,10 @@ h3{
   height: auto;
   width: 100%;
   margin: -2 0 20px 0;
+  @media only screen and (min-width:320px) and (max-width:1024px){
+    display: flex;
+    flex-wrap: nowrap;
+  }
 }
 
 ul{
@@ -54,8 +57,10 @@ ul{
   height: auto;
   width: 100%;
   margin: 0;
-  display:
-  fl
+  @media only screen and (min-width:320px) and (max-width:1024px){
+    display: flex;
+    flex-wrap: nowrap;
+  }
 }
 
 li{
@@ -64,7 +69,13 @@ li{
   width: auto;
   margin: 1.5em;
   float: right;
-  flex-wrap: nowrap;
+  @media only screen and (min-width:320px) and (max-width:1024px){
+  flex-wrap: wrap;
+  height: 0.8em;
+  margin: 0.75em;
+  }
+
+
 }
 
 hr{
@@ -76,6 +87,11 @@ a{
   color: whitesmoke;
   font-size: 1.5em;
   text-decoration: none;
+  @media only screen and (min-width:320px) and (max-width:1024px){
+    font-size: 0.6em;
+    display: inline-block;
+    border: 1px hidden;
+  }
 }
 
 a:hover{
