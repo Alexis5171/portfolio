@@ -6,10 +6,22 @@ width: auto;
 background-image: url('blue.webp');
 background-size: cover;
 }
+@-webkit-keyframes blinker{
+  from{opacity: 1.0;}
+  to{opacity: 0.0;}
+}
 
 h1{
-  font-style: italic;
-  font-size: 5em;
+  font-style: oblique;
+  font-size: 6em;
+  font-weight: bolder;
+  -webkit-animation-name: blinker;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: cubic-bezier(.5, 0, 1, 1);
+  -webkit-animation-duration: 1.7s;
+    @media only screen and (max-width:480px){
+     font-size: 4em;
+   }
   LinearGradient(gradient: Gradient(colors: [.red .yellow, .blue]), startPoint: .top, endPoint: .bottom)
 }
 
@@ -25,11 +37,12 @@ h2{
 }
 
 .welcome marquee{
-  font-size: 1.5em;
+  font-size: 1.3em;
   background: linear-gradient(red, yellow, blue);
+  height: auto;
   width: 90%;
   align-content: center;
-  margin: auto;
+  margin: 1em auto;
   border: 1px hidden;
   border-radius: 3px;
   font-style: oblique;
@@ -46,7 +59,7 @@ h3{
   height: auto;
   width: 100%;
   margin: -2 0 20px 0;
-  @media only screen and (min-width:320px) and (max-width:1024px){
+  @media only screen and (max-width:480px){
     display: flex;
     flex-wrap: nowrap;
   }
@@ -57,7 +70,7 @@ ul{
   height: auto;
   width: 100%;
   margin: 0;
-  @media only screen and (min-width:320px) and (max-width:1024px){
+  @media only screen and (max-width:480px){
     display: flex;
     flex-wrap: nowrap;
   }
@@ -69,7 +82,7 @@ li{
   width: auto;
   margin: 1.5em;
   float: right;
-  @media only screen and (min-width:320px) and (max-width:1024px){
+  @media only screen and (max-width:480px){
   flex-wrap: wrap;
   height: 0.8em;
   margin: 0.75em;
@@ -84,10 +97,10 @@ hr{
 }
 
 a{
-  color: whitesmoke;
+  color: beige;
   font-size: 1.5em;
   text-decoration: none;
-  @media only screen and (min-width:320px) and (max-width:1024px){
+  @media only screen and (max-width:480px){
     font-size: 0.6em;
     display: inline-block;
     border: 1px hidden;
@@ -103,9 +116,9 @@ a:hover{
 .welcome{
 height: 20em;
 width: auto;
-border: 1px soli blue;
+border: 1px;
 border-radius: 8px;
-margin-top: 2em;
+margin: 2em;
 text-align: center;
 color: snow;
 }
@@ -158,7 +171,7 @@ p{
   text-align: center;
   color: snow;
   margin: 2em 7em;
-  background-color: blue;
+  background: linear-gradient(dodgerblue, whitesmoke, blue);
   @media only screen and (min-width:320px) and (max-width:1024px){
       width: 100%;
     }
@@ -174,8 +187,7 @@ p{
 
 .icon a:hover{
   border-radius: 10px;
-  background-color: whit;
-  color: cyan;
+  color: bisque;
 }
 
 .in{
@@ -191,15 +203,15 @@ p{
 }
 
 .call{
-  color: gold;
+  color: sienna;
 }
 
 .app{
-  color: lightgreen;
+  color: springgreen;
 }
 
 .fb{
-  color: lightblue;
+  color: cornflowerblue;
 }
 .twitter{
   color: cyan
@@ -212,12 +224,13 @@ p{
   display: flex;
   flex-wrap: wrap;
   align-content: center;
-  margin: 2em auto;
-  @media only screen and (min-width:320px) and (max-width:1024px){
+  margin: 10em auto 3em;
+  @media only screen and (min-width:320px) and (max-width:480px){
     height: auto;
     width: 90%;
     display: inline-flex;
     flex-wrap: wrap;
+    margin: 6em auto;
   }
 }
 
@@ -238,8 +251,8 @@ p{
   border-color: white;
   float:right;
   padding: auto;
-  line-height: 1.2em;
-  font-weight: 1em;
+  line-height: 1.5em;
+  font-weight: 2em;
   color: whitesmoke;
 }
 
@@ -248,4 +261,20 @@ p{
   font-style: italic;
   font-family: montserrat;
   color: aqua;
+}
+
+#ratings{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: auto;
+  height: 2em;
+  width: 60%;
+  border: 1px hidden;
+  border-radius: 1em;
+  justify-content: center;
+  background: linear-gradient(dodgerblue, floralwhite, blue);
+}
+span{
+  color: gold;
 }
