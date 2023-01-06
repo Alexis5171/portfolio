@@ -13,14 +13,14 @@ background-size: cover;
 
 h1{
   font-style: oblique;
-  font-size: 6em;
+  font-size: 4em;
   font-weight: bolder;
   -webkit-animation-name: blinker;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: cubic-bezier(.5, 0, 1, 1);
   -webkit-animation-duration: 1.7s;
-    @media screen and (max-width:480px){
-     font-size: 4em;
+    @media screen and (m1n-width:481px){
+     font-size: 6em;
    }
   LinearGradient(gradient: Gradient(colors: [.red .yellow, .blue]), startPoint: .top, endPoint: .bottom)
 }
@@ -54,7 +54,7 @@ h3{
   font-style: oblique;
 }
 
-.navbar{
+#navbar{
   display: block;
   height: auto;
   width: 100%;
@@ -78,15 +78,10 @@ ul{
 
 li{
   display:inline-block;
-  height: 1.5em;
+  height: 1.2em;
   width: auto;
   margin: 1.5em;
   float: right;
-  @media screen and (max-width:480px){
-  flex-wrap: wrap;
-  height: 0.8em;
-  margin: 0.75em;
-  }
 
 
 }
@@ -98,13 +93,20 @@ hr{
 
 a{
   color: beige;
-  font-size: 1.5em;
+  font-size: 1em;
   text-decoration: none;
-  @media screen and (max-width:480px){
-    font-size: 0.6em;
-    display: inline-block;
-    border: 1px hidden;
-  }
+}
+@media only screen and (min-width:600px){
+  a{
+    font-size: 1.5em;
+  display: inline-block;
+ }
+ h1{
+   font-size: 6em;
+ }
+ #aboutme{
+   margin-top: 7em;
+ }
 }
 
 a:hover{
@@ -143,7 +145,7 @@ p{
   @media screen and (max-width:480px) {
     font-size: 0.6em;
     line-height: 1em;
-    background-color: white;
+    background-color: white
     height: auto;
     width: 100%;
   }
@@ -164,13 +166,14 @@ p{
 }
 
 #contact{
-  height: 2em
-  width: fit-content;
+  height: fit-content;
+  width: 85%;
   border: 1px solid blue;
   border-radius: 8px;
   text-align: center;
+  align-self: center;
   color: snow;
-  margin: 2em 7em;
+  margin: 2em auto;
   background: linear-gradient(dodgerblue, whitesmoke, blue);
   @media screen and (max-width:480px){
       width: 100%;
@@ -224,13 +227,13 @@ p{
   display: flex;
   flex-wrap: wrap;
   align-content: center;
-  margin: 10em auto 3em;
+  margin: 6em auto 3em;
   @media only screen and (min-width:320px) and (max-width:480px){
     height: auto;
-    width: 90%;
+    width: 100%;
     display: inline-flex;
     flex-wrap: wrap;
-    margin: 6em auto;
+    margin: 3em auto 3em;
   }
 }
 
@@ -267,7 +270,7 @@ p{
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  margin: auto;
+  margin: auto auto 1em;
   height: 2em;
   width: 60%;
   border: 1px hidden;
@@ -278,3 +281,34 @@ p{
 span{
   color: gold;
 }
+
+#top{
+  border: 1px solid black
+margin: auto;
+background: linear-gradient(deepskyblue, beige);
+color:gray;
+border-radius: 0.5em;
+padding: auto;
+margin-bottom: 0.5em;
+font-size: 1.2em;
+}
+@media only screen and (max-width 600px) {
+/*.navbar{
+  display: block;
+  height: auto;
+  width: 100%;
+}
+ul{
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  text-align: center;
+}
+li{
+  flex-wrap: nowrap;
+  height: 0.8em;
+  margin: 0.75em;
+  float: none;
+}
+}*/
+#
