@@ -277,6 +277,9 @@ p{
   border-radius: 1em;
   justify-content: center;
   background: linear-gradient(dodgerblue, floralwhite, blue);
+  @media only screen and (min-width:320px) and (max-width:480px){
+    margin: auto auto 5em;
+  }
 }
 span{
   color: gold;
@@ -291,6 +294,8 @@ border-radius: 0.5em;
 padding: auto;
 margin-bottom: 0.5em;
 font-size: 1.2em;
+@media only screen and (min-width:320px) and (max-width:480px){
+  margin: auto auto 2em;
 }
 @media only screen and (max-width 600px) {
 /*.navbar{
